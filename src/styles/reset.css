@@ -1,5 +1,4 @@
-/* Ensure same layer as global CSS in ./main.css */
-@layer base {
+@layer resets {
   /* A Modern CSS Reset by Josh W. Comeau */
   /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 

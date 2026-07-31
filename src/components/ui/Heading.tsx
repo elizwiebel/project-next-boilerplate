@@ -1,14 +1,14 @@
-import type { HTMLAttributes, ReactNode } from "react";
+import type { ElementType, HTMLAttributes, ReactNode } from "react";
 
 interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
-  level?: 1 | 2 | 3 | 4 | 5 | 6;
-  variant?: "spaced" | 1 | 2 | 3 | 4 | 5 | 6;
+  level: 1 | 2 | 3 | 4 | 5 | 6;
+  variant?: "spaced";
   children: ReactNode;
   className?: string;
 }
 
-const HEADING_STYLES: Record<number, string> = {
-  spaced: "text-5xl font-semibold tracking-tight text-slate-950",
+const HEADING_STYLES: Record<string, string> = {
+  spaced: "text-sm font-semibold uppercase tracking-[0.25em]",
   1: "m0",
   2: "m0",
   3: "m0",
@@ -17,11 +17,12 @@ const HEADING_STYLES: Record<number, string> = {
   6: "m0",
 };
 
-export function Heading({ level = 2, variant, className = "", children, ...props }: HeadingProps) {
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+export function Heading({ level, variant, className = "", children, ...props }: HeadingProps) {
+  const Tag = `h${level}` as ElementType;
+  const classes = `${HEADING_STYLES[variant ?? level]} ${className}`;
 
   return (
-    <Tag className={`${HEADING_STYLES[variant]} ${className}`} {...props}>
+    <Tag className={classes} {...props}>
       {children}
     </Tag>
   );

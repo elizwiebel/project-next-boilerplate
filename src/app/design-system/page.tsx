@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Heading } from "@/components/ui/Heading";
-import { SectionCard } from "@/components/layout/PageLayout";
+import { SectionCard } from "@/components/ui/SectionCard";
 import { Container } from "@/components/layout/Container";
 
 export default function DesignSystem() {
