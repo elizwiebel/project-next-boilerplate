@@ -169,6 +169,11 @@ ol ol {
   margin-top: 0.5rem;
 }
 
+:root {
+  --site-max-width: 1440px;
+  --site-padding-x: 16px;
+}
+
 /* breakpoint-sm */
 @media (min-width: 40rem) {
   :root {
@@ -202,6 +207,7 @@ ol ol {
     --text-base-sm--line-height: 1.5;
     --text-base-xs: 0.75rem;
     --text-base-xs--line-height: 1.5;
+    --site-padding-x: 24px;
   }
 }
 
@@ -238,5 +244,6 @@ ol ol {
     --text-base-sm--line-height: 1.5;
     --text-base-xs: 0.75rem;
     --text-base-xs--line-height: 1.5;
+    --site-padding-x: 32px;
   }
 }
