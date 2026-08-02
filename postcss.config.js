@@ -6,12 +6,6 @@ module.exports = {
       include: [
         // when using a src folder:
         "src/**/*.{js,jsx,ts,tsx}",
-        // app router:
-        "app/**/*.{js,jsx,ts,tsx}",
-        // pages router:
-        "pages/**/*.{js,jsx,ts,tsx}",
-        // other top-level folders:
-        "components/**/*.{js,jsx,ts,tsx}",
       ],
       babelConfig: {
         babelrc: false,
