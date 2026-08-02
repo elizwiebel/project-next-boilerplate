@@ -58,6 +58,7 @@ Run prettier:
 ```sh
 npx prettier --write .
 ```
+
 Sync .prettierignore with content from .gitignore
 
 ### 4. Organize files
